@@ -72,10 +72,12 @@ public class Methods {
 	 * @param values an array of integers
 	 * @return the sum of the elements in values
 	 */
-	public static int arraySum(int[] values) {
-		int sum = 0;
+	public static double arraySum(int[] values) {
+		double sum = 0; 
+		for (int i=0; i < values.length;i++){
+			sum += values[i];
+		}
 		// FIXME: Compute the sum of the values in an array
-		
 		return sum;
 	}
 
@@ -87,12 +89,12 @@ public class Methods {
 	 * @return and array of size that's filled with value
 	 */
 	public static int[] filledArray(int length, int value) {
-		int[] values = null; // FIXME: Create an array of the appropriate size
+		int[] array = new int [length]; // FIXME: Create an array of the appropriate size
 		// TODO: Finish this method
-
-		
-
-		return values;
+		for (int i = 0; i< array.length; i++) {
+			array[i] = value;
+		}
+		return array;
 	}
 
 	// TODO: Create an arrayMean method which accepts an int array of values parameter.
